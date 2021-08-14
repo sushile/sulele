@@ -1,0 +1,104 @@
+.content{
+    margin-top: 2em;
+    .container{
+        
+        .one{
+            background-color: white;
+            .title{
+                padding: 1em 1em;
+                .text{
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+            .row{
+                .cd{
+                    // text-align: center;
+                    background-color: #fafafc;
+                    margin: 1em 0.7em;
+                    box-shadow: 5px 5px 5px 5px bisque;
+
+                    .img{
+                        width: 100%;
+                        // border-radius: 50%;
+                        border: 1px solid  #fafafc;
+                        overflow: hidden;
+                        margin: 1em auto;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .info{
+                        // text-align: center;
+                        width: 80%;
+                        margin: 0 auto;
+                        h3{
+                            font-weight: bold;
+                            font-size: 13px;
+                        }
+                        p{
+                            span{color: red;}
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-end;
+                        margin-bottom: 1em;
+                        .text{
+                            color: red;
+                        }
+                        .bottom_1{
+                            border:1px solid black;
+                            border-radius: 6px;
+                            width: 24%;
+                            text-align: center;
+                            margin-left: 1em;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
+
+
+
+
+.paging{
+    width: 15%;
+    margin: 0 auto;
+    .pagination{
+        &>li{
+            a{
+                border-radius: 20px 20px 20px 20px;
+                margin-left:5px ;
+                &:hover{
+                    background-color: #ffb900;
+                    color: pink;
+                    
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1500px){
+        &{
+            width: 15%;
+        }
+    }
+    @media screen and (max-width:1200px){
+        &{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:890px){
+        &{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:630px){
+        &{
+            width: 49%;
+        }
+    }
+}

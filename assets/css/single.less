@@ -1,0 +1,213 @@
+// 音乐导航
+.music_nav{
+   
+    .nav_2{
+        color: ffffff;
+        ul{
+            display: flex;
+            a{
+                margin: 10px 0px;
+                padding-right: 7em;
+                color: black;
+                &:hover{
+                    color: #0f8ece;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:560px){
+        &{
+            .nav_2{
+                ul{
+                    justify-content: space-between;
+                   li{ 
+                    
+                       a{
+                           padding-right: 3em;
+                           margin-left: 2em;
+                          
+                        }
+                    }               
+                }
+            }
+        }
+    }
+}
+// banner
+.banner{
+    .container{
+        display: flex;
+        .left{
+            position: relative;
+            width: 48%;
+            .img{
+                background-color: #1db1f2;
+                position: absolute;
+                top: 271px;
+                left: -16px;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px;
+                width: 38%;
+                .left{
+                    color: blueviolet;
+                }
+                .right{
+                    margin-left: 2em;
+                }
+            }
+            
+        }
+        .right{
+            margin-left: 3em;
+            width: 48%;
+            .top{
+                display: flex;
+                .left{
+                    color: cornsilk;
+                    background-color:#1db1f2 ;
+                    width:16%;
+                    text-align: center;
+                    padding-top: 2em;
+                    padding-bottom: 1em;
+                    border-radius: 5px;
+                    
+                }
+                .right{
+                    color: black;
+                    // text-align: center;
+                    margin-top: 2em;
+                    font-size: 1.5em;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .center{
+                display: flex;
+                .text{
+                    margin-top: 2em;
+                    position: relative;
+                    font-size: 18px;
+                    .one{
+                        opacity: .2;
+                        font-size: 13em;
+                        position: absolute;
+                        top: -108px;
+                        left: -29px;
+                    }
+                    .two{
+                        opacity: .2;
+                        font-size: 13em;
+                        position: absolute;
+                        top: 48px;
+                        right: -29px;
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 3em;
+                .share_icon{margin-right: 1em;}
+                .info_icon{margin-right: 1em;}
+                .text{margin-right: 1em;}
+            }
+
+        }
+    }
+    @media screen and (max-width:1200px){
+        &{
+            .container{
+                flex-wrap: wrap;
+                .left{
+                    width: 100%;
+                    .img{
+                        display: none;
+                    }
+                }
+                .right{
+                    width: 100%;
+                    .center{
+                        .text{
+                            .two{
+                                position: absolute;
+                                top: 200px;
+                                right: -16px;
+                            }
+                        } 
+                    } 
+                }
+            }
+        }
+    }
+}
+// 内容
+.content{
+    margin-top: 2em;
+    .container{
+        .row{
+            .cd{
+                margin-top: 1em;
+                .top{
+                    display: flex;
+                    background-color: #fff;
+                    height: 17em;
+                    overflow: hidden;
+                    .img{
+                        width: 87%;
+                        border-radius: 6px;
+                        margin: 1em 16px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .bottom{
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 1em;
+                    .left{
+                        width: 85%;
+                        margin-left: 1.2em;
+                        .name{
+                            color: black;
+                            font-weight: bold;
+                            span{
+                                color: #1db1f2;
+                                font-weight: 300;
+                            }
+                        }
+                        .info{
+                            margin-top: 1em;
+                            color: #808080;}
+                        .date{
+                            margin-top: 1em;
+                            margin-bottom: 3em;
+                            span{
+                                color: #808080;
+                            }                          
+                        }
+                    }
+                        
+                    
+                    .right{
+                        margin-right: 2em;
+                        margin-top: 2em;
+                       .share_icon{
+                           margin-top: 1.5em;
+                       }
+                       .hot_icon{
+                        margin-top: 1.5em;
+                       }
+                    }
+                }
+            }
+        }
+        .song_more{
+            text-align: center;
+            margin-top: 2em;
+        }
+    }
+}

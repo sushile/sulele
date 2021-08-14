@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原创音乐</title>
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+     <!-- animate.css -->
+     <link rel="stylesheet" href="./assets/css/animate.min.css" />
+ 
+     <!-- 重置样式 -->
+     <link rel="stylesheet/less" href="./assets/css/reset.less" />
+ 
+     <!-- 公共样式 -->
+     <link rel="stylesheet/less" href="./assets/css/common.less" />
+ 
+     <!-- 页面独立的 -->
+     <link rel="stylesheet/less" href="./assets/css/original.less" />
+</head>
+<body>
+    <!-- 导航栏 -->
+<header>
+    <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- logo -->
+                 <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                    </button>
+            
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/header_logo.png" alt="">
+                </a>
+                </div>       
+                <!-- 导航栏选项-->
+                <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li>
+                            <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">发现</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="wow fadeInRight" data-wow-delay="200ms">我的音乐</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="wow fadeInRight" data-wow-delay="300ms">原创音乐</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="wow fadeInRight" data-wow-delay="400ms">音乐故事</a>
+                        </li>
+                        <li>
+                            <a href="#test" class="wow fadeInRight" data-wow-delay="500ms">音乐社区</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="wow fadeInRight" data-wow-delay="600ms">活动</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="wow fadeInRight" data-wow-delay="600ms">商城</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 搜索框 -->
+                <form class="search navbar-nav navbar-left">
+                    <div class="form-group has-success has-feedback">
+                      <input type="text" class="form-control">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+                <!-- 登录注册 -->
+                <div class="botton navbar-right">
+                    <a href="#">登录</a>
+                    <a href="#">/注册</a>
+                </div>
+            </div>
+    </nav>
+</header>
+<!-- 音乐导航 -->
+<div class="music_nav">
+    <div class="container">
+        <div class="nav_2">
+            <ul>
+                <li>
+                    <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">音乐心情</a>
+                </li>
+                <li>
+                    <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">单曲</a>
+                </li>
+                <li>
+                    <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">乐评</a>
+                </li>
+                <li>
+                    <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">随机</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- banner -->
+<div class="banner">
+    <div class="container">
+        <div class="top">认证</div>
+        <div class="bottom">
+            您安心做好您的音乐，剩下的交给我们</br>
+            You peace of mind to do music The remaining to us</div>
+    </div>
+</div>
+<!-- content -->
+<div class="content"> 
+    <div class="container">
+        <div class="left">
+            <!-- 音乐信息 -->
+            <div class="music_info">
+                <div class="title">
+                    填写歌曲信息
+                </div>
+                <div class="icon">
+                    <img src="./assets/images/m_icon.png" alt="">
+                </div>
+            
+                <form id="login">
+                    <!-- 上传图片 -->
+                    <div class="item"> 
+                        <label> 歌曲封面:</label> 
+                        <div class="box1" id="upload" name="img" >
+                            <div class="img"><img src="./assets/images/shizi.png" alt=""></div>
+                            <span>请上传不小于</br>
+                                500X500的图片</span>  
+                        </div>
+                        <input type="file" id= "click"style="display: none;">
+                    </div>   
+                    <div class="item">
+                        <label>歌曲名称：</label>                 
+                        <input type="text" name="musicname" required /><br />
+                    </div>
+                    <div class="item">   
+                        <label>演唱者：</label>  
+                        <input type="text" name="singername" required /><br />
+                    </div>             
+                    <div class="item">   
+                        <label>作词：</label>  
+                        <input type="text" name="lyricsname" required /><br />
+                    </div>     
+                    <div class="item">   
+                        <label>作曲：</label> 
+                        <input type="text" name="composename" required /><br />
+                    </div>
+                    <div class="item">   
+                        <label>编曲：</label> 
+                        <input type="text" name="arrangername" required /><br />
+                    </div>      
+                    <div class="item">  
+                        <label>后期：</label> 
+                        <input type="text" name="later_stage" required /><br />
+                    </div>      
+                    <div class="item_2">   
+                        <label>语种：</label> 
+                        <div class="box_big">
+                            <div class="box">华语</div>
+                            <div class="box">欧美</div>
+                            <div class="box">日语</div>
+                            <div class="box">韩语</div>
+                            <div class="box">粤语</div>
+                            <div class="box">俄语</div>
+                            <div class="box">法语</div>
+                            <div class="box">德语</div>
+                            <div class="box">其他</div>
+                        </div>
+                        
+                    </div>
+                    <div class="item_3">   
+                        <label>曲风：</label>
+                        <div class="box_big">
+                            <div class="box">古风</div>
+                            <div class="box">爵士</div>
+                            <div class="box">蓝调</div>
+                            <div class="box">乡村</div>
+                            <div class="box">流行</div>
+                            <div class="box">民谣</div>
+                            <div class="box">嘻哈</div>
+                            <div class="box">其他</div>
+                        </div>
+                    </div>         
+                    
+            
+                     <!-- <button type="submit">提交</button> -->
+                </form>
+            </div>
+            <!-- 填写灵感歌词 inspiration ,lyric-->
+            <div class="ip_ly">
+                <div class="title">
+                    填写灵感&歌词
+                </div>
+                <div class="icon">
+                    <img src="./assets/images/m_icon.png" alt="">
+                </div>
+                <form id = "login2">
+                    <label>创作灵感:</label>
+                    <textarea name="inspiration" placeholder="" required></textarea><br />
+                    <label>歌词:</label>
+                    <textarea name="lyric" placeholder="" required></textarea>
+                </form>
+
+            </div>
+            <!-- 音乐设置 -->
+            <div class="musicsetup">
+                <div class="title">
+                    音乐设置
+                </div>
+                <div class="icon">
+                    <img src="./assets/images/m_icon.png" alt="">
+                </div>
+                <form id = "login3">
+                    <div class="upload">
+                            <label>下载设置</label>
+                            <input type="radio" value="1">不许下载
+                            <input type="radio" value="2">免费下载
+                            <input type="radio" value="3">付费下载
+                    </div>
+                    <div class="read">
+                        <input type="checkbox" value="1" id="read">
+                        <span>我已阅读并同意<a>《授权协议》</a></span>
+                    </div>
+                    <div class="box2" id="sub" name="img">上传并递交审核</div>
+                    <input type="button" value="" id="submit" style="display: none;">
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="right">
+            <div class="top_1">
+                <div class="left">
+                    <div class="title">
+                        优秀作品
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/images/m_icon.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    more>>
+                </div>
+            </div>
+            <div class="content_1">
+                <div class="box_1">
+                    <img src="./assets/images/rig_1.png" alt="">
+                    <span class="text">
+                        贰佰《嘿，抬头》销量破</br>
+                        20万，创独立音乐新标杆。 </span>
+                </div>
+               
+                <div class="box_1">
+                    <img src="./assets/images/rig_2.png" alt="">
+                    <span class="text">
+                        宋冬野《年轻 就该有不羁</br>
+                        的自由》引起观众共鸣。 </span>
+                </div>
+                <div class="box_1">
+                    <img src="./assets/images/rig_3.png" alt="">
+                    <span class="text">
+                        发布《中国独立音乐人生</br>
+                        存现状报告》 </span>
+                </div>
+                <div class="box_1">
+                    <img src="./assets/images/rig_4.png" alt="">
+                    <span class="text">
+                        马頔《时间里的》销售额</br>
+                        破百万破纪录 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+<!-- footer -->
+<div class="footer" id="footer">
+    <div class="footer_big">
+      <div class="container">  
+          <div class="row">
+              <div class="col-xs-6 col-sm-3 col-lg-2 footer-item">
+                  <div class="footer-list">
+                      <div class="img">
+                          <img src="./assets/images/header_logo.png" alt="">
+                      </div>
+                      <ul>
+                          <li><a href="" target="_blank">关于我们</a></li>
+                          <li><a href="">联系我们</a></li>
+                          <li><a href="">隐私政策</a></li>
+                          <li><a href="">网络信息</a></li>
+                          <li><a href="">侵权通知索引</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-4 footer-item">
+                  <div class="footer-list">
+                      <h3>合作伙伴</h3>
+                      <ul>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/5s.png">
+                            <p>5sing音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/kg.png">
+                            <p>酷狗音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/qqmusic.png">
+                            <p>QQ音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/xia.png">
+                            <p>虾米音乐</p>
+                        </div>
+                    </ul>
+
+                      
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-2 footer-item">
+                  <div class="footer-list">
+                      <h3>幻听客户端</h3>
+                      <ul>
+                          <li><a href="#">幻听 for IPhone</a></li>
+                          <li><a href="#">幻听 for Andraid</a></li>
+                          <li><a href="#">幻听 for windows</a></li>
+                          <li><a href="#">幻听 for Mac</a></li>
+                          <li><a href="#">幻听 for IPad</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-1 footer-item">
+                <div class="footer-list">
+                    <h3>更多</h3>
+                    <ul>
+                        <li><a href="#">客户服务</a></li>
+                        <li><a href="#">服务条款</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-lg-3 footer-item">
+                <div class="footer-wechat">
+                      <img class="img-responsive" src="./assets/images/code.png">
+                      <p>ios/Androd下载</p>
+                </div>
+                <div class="footer-wechat2">
+                    <img class="img-responsive" src="./assets/images/code.png">
+                    <p>微信公众号</p>
+              </div>
+              </div>
+          </div>
+    </div>
+  </div>
+  
+    <div class="second">
+        <div class="container">
+            <div class="one">
+                <P>© 2017 Mafengwo.cn 京公网安备110105013401号 京ICP证110318号</p>
+            </div>
+            <div class="two">
+                <div class="left">
+                    <p>营业执照 新出网证（京）字242号 全国统一客服电话：022-4562-245  网站地图</P>
+                </div>
+                <div class="right">
+                    <P>幻听音乐公司版权所有©1997-2017天津文化有限公司</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- 解析less的文件 -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- jquery  -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- wow.js -->
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<script src="./assets/css/Validform_v5.3.2_min.js"></script>
+
+<script>
+    // 上传图片
+    var upload = document.getElementById('upload')
+    var click = document.getElementById('click')
+    upload.addEventListener("click", function(e) {
+        if (click) {
+            click.click();
+        }
+        e.preventDefault();
+        }, false);
+
+    $(".content #login").submit(function(e){
+        e.preventDefault()
+        // 歌曲名
+        var pattern = /^[\u4E00-\u9FA5A-Za-z0-9]{1,20}$/
+        var musicname = $.trim($(`input[name='musicname']`).val())
+        if(!pattern.test(musicname))
+                {
+                    alert('歌曲名称输入有误，请重新输入')
+                    return false
+                }
+        
+
+        // 演唱者
+        var pattern = /^[\u4E00-\u9FA5A-Za-z]+$/
+        var singername = $.trim($(`input[name='singername']`).val())
+        if(!pattern.test(singername))
+                {
+                    alert('演唱者输入有误，请重新输入')
+                    return false
+                }
+        // 作词        
+        var pattern = /^[\u4E00-\u9FA5A-Za-z]+$/
+        var lyricsname = $.trim($(`input[name='lyricsname']`).val())
+        if(!pattern.test(lyricsname))
+                {
+                    alert('作词人输入有误，请重新输入')
+                    return false
+                }
+        // 作曲
+        var pattern = /^[\u4E00-\u9FA5A-Za-z]+$/
+        var composename = $.trim($(`input[name='composename']`).val())
+        if(!pattern.test(composename))
+                {
+                    alert('作曲人输入有误，请重新输入')
+                    return false
+                }
+        // 编曲
+        var pattern = /^[\u4E00-\u9FA5A-Za-z]+$/
+        var arrangername = $.trim($(`input[name='arrangername']`).val())
+        if(!pattern.test(arrangername))
+                {
+                    alert('编曲人输入有误，请重新输入')
+                    return false
+                }      
+    })
+
+
+    var sub =document.getElementById("sub")
+    var submit =document.getElementById("submit")
+
+    sub.addEventListener("click",function (e) {
+        if (click){
+            submit.click();
+        }
+        e.preventDefault();
+        },false); 
+</script>
+

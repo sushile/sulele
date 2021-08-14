@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城</title>
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+     <!-- animate.css -->
+     <link rel="stylesheet" href="./assets/css/animate.min.css" />
+ 
+     <!-- 重置样式 -->
+     <link rel="stylesheet/less" href="./assets/css/reset.less" />
+ 
+     <!-- 公共样式 -->
+     <link rel="stylesheet/less" href="./assets/css/common.less" />
+ 
+     <!-- 页面独立的 -->
+     <link rel="stylesheet/less" href="./assets/css/shop.less" />
+</head>
+<body>
+<!-- 导航栏 -->
+<header>
+    <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- logo -->
+                 <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                    </button>
+            
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/header_logo.png" alt="">
+                </a>
+                </div>       
+                <!-- 导航栏选项-->
+                <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li>
+                            <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">发现</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="wow fadeInRight" data-wow-delay="200ms">我的音乐</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="wow fadeInRight" data-wow-delay="300ms">原创音乐</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="wow fadeInRight" data-wow-delay="400ms">音乐故事</a>
+                        </li>
+                        <li>
+                            <a href="#test" class="wow fadeInRight" data-wow-delay="500ms">音乐社区</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="wow fadeInRight" data-wow-delay="600ms">活动</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="wow fadeInRight" data-wow-delay="600ms">商城</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 搜索框 -->
+                <form class="search navbar-nav navbar-left">
+                    <div class="form-group has-success has-feedback">
+                      <input type="text" class="form-control">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+                <!-- 登录注册 -->
+                <div class="botton navbar-right">
+                    <a href="#">登录</a>
+                    <a href="#">/注册</a>
+                </div>
+            </div>
+    </nav>
+</header>
+
+<!-- 内容 -->
+<div class="content">
+    <div class="container">
+        <div class="one">
+            <div class="title">
+                <img src="./assets/images/shop_icon.png" alt="">
+                <span class="text">本周推荐</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Perfect(Cadillac X DONGHAE0</h3>
+                        <p>
+                            歌手：东海</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>81</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥15</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>RescuE</h3>
+                        <p>
+                            歌手：Younha</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>189</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div> 
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>널 맞이할 준비</h3>
+                        <p>
+                            歌手：U-Kiss</br>
+                            发行时间：2017年12月26日</br>
+                            收藏<span>68</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥22</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_4.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Mars Baby</h3>
+                        <p>
+                            歌手：陶喆</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>156</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥30</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_5.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>目立里</h3>
+                        <p>
+                            歌手：瞳乐队</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>28</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥20</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_6.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>小团圆</h3>
+                        <p>
+                            歌手：SNH48</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>35</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_7.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Pink Stories</h3>
+                        <p>
+                            歌手：Apink</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>252</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥26</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>节拍器</h3>
+                        <p>
+                            歌手：MooLii</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>43</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥12</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="two">
+            <div class="title">
+                <img src="./assets/images/shop_icon.png" alt="">
+                <span class="text">本周最新</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Perfect(Cadillac X DONGHAE0</h3>
+                        <p>
+                            歌手：东海</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>81</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥15</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>RescuE</h3>
+                        <p>
+                            歌手：Younha</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>189</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div> 
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>널 맞이할 준비</h3>
+                        <p>
+                            歌手：U-Kiss</br>
+                            发行时间：2017年12月26日</br>
+                            收藏<span>68</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥22</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_4.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Mars Baby</h3>
+                        <p>
+                            歌手：陶喆</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>156</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥30</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_5.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>目立里</h3>
+                        <p>
+                            歌手：瞳乐队</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>28</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥20</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_6.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>小团圆</h3>
+                        <p>
+                            歌手：SNH48</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>35</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_7.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Pink Stories</h3>
+                        <p>
+                            歌手：Apink</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>252</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥26</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>节拍器</h3>
+                        <p>
+                            歌手：MooLii</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>43</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥12</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="thr">
+            <div class="title">
+                <img src="./assets/images/shop_icon.png" alt="">
+                <span class="text">本周最热</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Perfect(Cadillac X DONGHAE0</h3>
+                        <p>
+                            歌手：东海</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>81</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥15</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>RescuE</h3>
+                        <p>
+                            歌手：Younha</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>189</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div> 
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>널 맞이할 준비</h3>
+                        <p>
+                            歌手：U-Kiss</br>
+                            发行时间：2017年12月26日</br>
+                            收藏<span>68</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥22</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_4.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Mars Baby</h3>
+                        <p>
+                            歌手：陶喆</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>156</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥30</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_5.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>目立里</h3>
+                        <p>
+                            歌手：瞳乐队</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>28</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥20</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_6.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>小团圆</h3>
+                        <p>
+                            歌手：SNH48</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>35</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥18</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_7.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Pink Stories</h3>
+                        <p>
+                            歌手：Apink</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>252</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥26</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                <div class="col-md-3 cd" >
+                    <div class="img">
+                        <img src="./assets/images/shop_8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>节拍器</h3>
+                        <p>
+                            歌手：MooLii</br>
+                            发行时间：2017年12月27日</br>
+                            收藏<span>43</span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <span class="text">￥12</span>
+                        <div class="bottom_1">购买</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<div class="footer" id="footer">
+    <div class="footer_big">
+      <div class="container">  
+          <div class="row">
+              <div class="col-xs-6 col-sm-3 col-lg-2 footer-item">
+                  <div class="footer-list">
+                      <div class="img">
+                          <img src="./assets/images/header_logo.png" alt="">
+                      </div>
+                      <ul>
+                          <li><a href="" target="_blank">关于我们</a></li>
+                          <li><a href="">联系我们</a></li>
+                          <li><a href="">隐私政策</a></li>
+                          <li><a href="">网络信息</a></li>
+                          <li><a href="">侵权通知索引</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-4 footer-item">
+                  <div class="footer-list">
+                      <h3>合作伙伴</h3>
+                      <ul>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/5s.png">
+                            <p>5sing音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/kg.png">
+                            <p>酷狗音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/qqmusic.png">
+                            <p>QQ音乐</p>
+                        </div>
+                        <div class="logo">
+                            <img class="img-responsive" src="./assets/images/xia.png">
+                            <p>虾米音乐</p>
+                        </div>
+                    </ul>
+
+                      
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-2 footer-item">
+                  <div class="footer-list">
+                      <h3>幻听客户端</h3>
+                      <ul>
+                          <li><a href="#">幻听 for IPhone</a></li>
+                          <li><a href="#">幻听 for Andraid</a></li>
+                          <li><a href="#">幻听 for windows</a></li>
+                          <li><a href="#">幻听 for Mac</a></li>
+                          <li><a href="#">幻听 for IPad</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-lg-1 footer-item">
+                <div class="footer-list">
+                    <h3>更多</h3>
+                    <ul>
+                        <li><a href="#">客户服务</a></li>
+                        <li><a href="#">服务条款</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-lg-3 footer-item">
+                <div class="footer-wechat">
+                      <img class="img-responsive" src="./assets/images/code.png">
+                      <p>ios/Androd下载</p>
+                </div>
+                <div class="footer-wechat2">
+                    <img class="img-responsive" src="./assets/images/code.png">
+                    <p>微信公众号</p>
+              </div>
+              </div>
+          </div>
+    </div>
+  </div>
+  
+    <div class="second">
+        <div class="container">
+            <div class="one">
+                <P>© 2017 Mafengwo.cn 京公网安备110105013401号 京ICP证110318号</p>
+            </div>
+            <div class="two">
+                <div class="left">
+                    <p>营业执照 新出网证（京）字242号 全国统一客服电话：022-4562-245  网站地图</P>
+                </div>
+                <div class="right">
+                    <P>幻听音乐公司版权所有©1997-2017天津文化有限公司</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+<!-- 解析less的文件 -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- jquery  -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- wow.js -->
+<script src="./assets/js/wow.min.repeat.js"></script>
