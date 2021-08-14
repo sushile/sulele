@@ -203,10 +203,14 @@
                     <img src="./assets/images/m_icon.png" alt="">
                 </div>
                 <form id = "login2">
-                    <label>创作灵感:</label>
-                    <textarea name="inspiration" placeholder="" required></textarea><br />
-                    <label>歌词:</label>
-                    <textarea name="lyric" placeholder="" required></textarea>
+                    <div class="one">
+                        <label class="aa">创作灵感:</label>
+                        <textarea name="inspiration" class="bb" placeholder="" required></textarea><br />
+                    </div>
+                    <div class="two">
+                        <label class="aa">歌词:</label>
+                        <textarea name="lyric" class="bb"placeholder="" required></textarea>
+                    </div>
                 </form>
 
             </div>
@@ -220,14 +224,23 @@
                 </div>
                 <form id = "login3">
                     <div class="upload">
-                            <label>下载设置</label>
-                            <input type="radio" value="1">不许下载
-                            <input type="radio" value="2">免费下载
-                            <input type="radio" value="3">付费下载
+                        <div class="big">
+                                <label class="text">下载设置:</label>
+                                <div class="left_2">
+                                    <input type="radio" class="radio" name="rad" value="1">
+                                    <span class="load"> 不许下载</span>
+                                
+                                    <input type="radio" class="radio"  name="rad" value="2">
+                                    <span class="load"> 免费下载</span>
+                               
+                                    <input type="radio" class="radio"  name="rad" value="3">
+                                    <span class="load"> 付费下载</span>
+                                </div>
+                        </div>
                     </div>
                     <div class="read">
                         <input type="checkbox" value="1" id="read">
-                        <span>我已阅读并同意<a>《授权协议》</a></span>
+                        <span class="text">我已阅读并同意<a>《授权协议》</a></span>
                     </div>
                     <div class="box2" id="sub" name="img">上传并递交审核</div>
                     <input type="button" value="" id="submit" style="display: none;">
